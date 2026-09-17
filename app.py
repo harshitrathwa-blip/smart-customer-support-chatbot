@@ -115,3 +115,4 @@ if user_input:
             except Exception as e:
                 error_msg = "An error occurred while connecting to Gemini service. Please check your network or API key configuration."
                 st.error(f"{error_msg}")
+                st.exception(e)  # TEMPORARY - shows real error, remove before final submission
